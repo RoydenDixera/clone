@@ -1,0 +1,272 @@
+<html>
+  <head>
+    <title>Webpage</title>
+    <style>
+      body {
+        font-size: 10pt;
+        font-family: arial, sans-serif;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: none;
+      }
+
+      button {
+        font-weight: bold;
+        font-family: arial;
+      }
+
+      /* Top Toolbar */
+      .top-toolbar {
+        height: 50px;
+      }
+
+      .top-toolbar nav {
+        float: right;
+        margin: 7px 21px;
+      }
+
+      .top-toolbar nav a {
+        margin: 3px 6px;
+        color: #404040;
+      }
+
+      .top-toolbar nav a:hover {
+        color: #111111;
+      }
+
+      .top-toolbar nav button {
+        padding: 7px 12px;
+        border-radius: 2px;
+        /* background-color: #4585F1;*/
+        background-image: -moz-linear-gradient(top left, #4084F9 0%, #4585F1 100%);
+        background-image: -o-linear-gradient(top left, #4084F9 0%, #4585F1 100%);
+        background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #4585F1), color-stop(1, #0097DE));
+        background-image: -webkit-linear-gradient(top left, #4084F9 0%, #4585F1 100%);
+        color: white;
+        border: 1px darkblue;
+        font-size: 9.5pt;
+      }
+
+      .top-toolbar nav button:hover {
+        box-shadow: 1px 1px 0 rgba(0, 0, 0, .2);
+      }
+
+      .top-toolbar nav img {
+        margin: 0 7.5px;
+        height: 22px;
+        position: relative;
+        top: 7px;
+      }
+
+      /* End of Top Toolbar */
+      /* Search */
+      .search {
+        text-align: center;
+        clear: both;
+        margin: 11% 0 0 0;
+      }
+
+      .logo {
+        max-width: 21%;
+        margin: 0 auto;
+      }
+
+      .search img {
+        margin-bottom: 3%;
+        max-width: 100%;
+      }
+
+      .search input {
+        width: 570px;
+        background-color: #fff;
+        padding: 12px 20px;
+        border-radius: 30px;
+        font-size: 16px;
+        -webkit-box-shadow: 3px 3px 15px 0px #20212447;
+        -moz-box-shadow: 3px 3px 15px 0px #20212447;
+        box-shadow: 3px 3px 15px 0px #20212447;
+        border: none;
+        margin-bottom: 10px;
+        /* background: url('images/microphone.png') no-repeat;
+          background-position: right;
+          background-size: 4.25%;*/
+      }
+
+      .search-bar {
+        max-width: 80%;
+      }
+
+      .search input:focus {
+        outline: none;
+        border: 1px solid #4285F4;
+      }
+
+      .search button {
+        margin: 14px 7px 0 5px;
+        padding: 7px 8px;
+        border-radius: 2px;
+        border: 1px solid #D0D0D0;
+        color: #444444;
+        background-image: -moz-linear-gradient(top, #F5F5F5 0%, #F0F0F0 100%);
+        background-image: -o-linear-gradient(top, #F5F5F5 0%, #F0F0F0 100%);
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #F5F5F5), color-stop(1, #F0F0F0));
+        background-image: -webkit-linear-gradient(top, #F5F5F5 0%, #F0F0F0 100%);
+        background-image: linear-gradient(to bottom, #F5F5F5 0%, #F0F0F0 100%);
+      }
+
+      .search button:hover {
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, .1);
+      }
+
+      /* End of Search */
+      /* Footer */
+      footer {
+        position: fixed;
+        bottom: 0;
+        height: 42px;
+        width: 100%;
+        font-size: 9.5pt;
+        background-image: -moz-linear-gradient(top, #F5F5F5 0%, #F0F0F0 100%);
+        background-image: -o-linear-gradient(top, #F5F5F5 0%, #F0F0F0 100%);
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #F5F5F5), color-stop(1, #F0F0F0));
+        background-image: -webkit-linear-gradient(top, #F5F5F5 0%, #F0F0F0 100%);
+        background-image: linear-gradient(to bottom, #F5F5F5 0%, #F0F0F0 100%);
+      }
+
+      .footer-left {
+        float: left;
+        margin-left: 16px;
+      }
+
+      .footer-right {
+        float: right;
+        margin-right: 16px;
+      }
+
+      footer nav {
+        display: inline-block;
+        padding: 15px 0 0 0;
+      }
+
+      footer nav a {
+        padding: 3px 14px;
+        color: #646464;
+      }
+
+      footer nav a:hover {
+        color: #000000;
+      }
+
+      /* End of Footer */
+      @media screen and (max-width: 510px) {
+
+        .top-toolbar nav a:nth-child(2),
+        a:nth-child(3),
+        footer {
+          display: none;
+        }
+
+        .logo {
+          max-width: 40%;
+        }
+      }
+      
+        /* Extra by Darish*/
+        .zoom {
+          text-decoration: none;
+          padding: 0px;
+          background-color: white;
+          transition: transform .2s; /* Animation */
+          margin: 0 auto;
+        }
+
+        .zoom:hover {
+          font-weight: bold;
+          text-decoration: none;
+          transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+        }
+
+        .container{
+          background-color: #F0F0F0;
+          border-radius: 5px ;
+        }
+        .container:hover{
+          background-color: #d0e1ff;
+        }
+        
+    </style>
+  </head>
+  <body>
+    <div class="top-toolbar">
+      <nav>
+        <a class="user">Logged in as: {% if request.user.is_authenticated %} {{ user.username }} {% else %} Not Loggen in {% endif %}</a>
+      <a class="navbar" href="https://myaccount.google.com/">You</a>
+      <a class="navbar" href="https://mail.google.com/">Gmail</a>
+      <a class="navbar" href="https://www.google.co.in/imghp?hl=en&authuser=0&ogbl">Images</a>
+      <a class="navbar" href="https://www.sfit.ac.in/">
+        <img class="zoom" src="https://imgur.com/FvRNAbO.png" alt="SFIT Homepage">
+      </a>
+      <img class="zoom" src="https://icon-library.com/images/google-menu-icon/google-menu-icon-9.jpg" />
+      
+      {% if request.user.is_authenticated %}
+          <img src="https://freesvg.org/img/abstract-user-flat-4.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" loading="lazy">
+          <a href="{% url 'logout' %}">
+            <button class="signin zoom">Sign Out</button>
+      {% else %}
+        <a href="{% url 'login' %}">
+        <button class="signin zoom">Sign In</button>
+      {% endif %}
+      </nav>
+    </div>
+    <div class="search">
+      <div class="logo">
+        <a href="#">
+        <img class="zoom" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" />
+        </a>
+      </div>
+      <form method="POST" action="search"> {% csrf_token %} 
+        <input class="search-bar" type="text" name="search" placeholder="Search Google or type a URL" autocomplete="off" autofocus x-webkit-speech />
+        <div class="search-nav">
+          <div class="search-button">
+            <a href="#">
+              <button class="zoom" type="submit">Google Search</button>
+      </form>
+      <a href="#">
+        <button class="zoom">I'm Feeling Lucky</button>
+      </a>
+      <form action="{% url 'voice' %}" method="post">{% csrf_token %}
+        <a href="{% url 'voice' %}">
+          <button type="submit" class="zoom">
+            <svg width="17" height="24" viewBox="0 0 17 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.9 10.8C16.3556 10.8 16.7322 11.1386 16.7918 11.5778L16.8 11.7V12.3C16.8 16.5713 13.494 20.0705 9.3012 20.378L9.3 23.1C9.3 23.597 8.89704 24 8.4 24C7.94436 24 7.5678 23.6614 7.50816 23.2222L7.5 23.1V20.3782C3.39988 20.0779 0.147396 16.7256 0.00487175 12.5836L0 12.3V11.7C0 11.203 0.402948 10.8 0.9 10.8C1.35564 10.8 1.73219 11.1386 1.79178 11.5778L1.8 11.7V12.3C1.8 15.6924 4.48134 18.4585 7.84032 18.5947L8.1 18.6H8.7C12.0924 18.6 14.8585 15.9187 14.9947 12.5597L15 12.3V11.7C15 11.203 15.403 10.8 15.9 10.8ZM8.4 0C11.0509 0 13.2 2.14903 13.2 4.8V12C13.2 14.6509 11.0509 16.8 8.4 16.8C5.74903 16.8 3.6 14.6509 3.6 12V4.8C3.6 2.14903 5.74903 0 8.4 0ZM8.4 1.8C6.74316 1.8 5.4 3.14315 5.4 4.8V12C5.4 13.6568 6.74316 15 8.4 15C10.0568 15 11.4 13.6568 11.4 12V4.8C11.4 3.14315 10.0568 1.8 8.4 1.8Z" fill="#123BB6"></path></svg>
+          </button>
+        </a>
+      </form>
+    </div>
+    </div>
+    </div> {% if final_result %} <b style="padding-left: 50px; padding-right: 50px; color: #646464;">Web Results</b> {% for result in final_result %} <div class="container" style="padding-left: 50px; padding-right: 50px;">
+      <h3 style="color: blue;">
+        <a href="{{ result.1 }}">{{ result.0 }}</a>
+      </h3>
+      <h3 style="color: green;">{{ result.1 }}</h3>
+      <h3>{{ result.2 }}</h3>
+    </div>
+     {% endfor %} {% endif %} <div class="footer">
+      <footer class="bottom-toolbar">
+        <nav class="footer-left">
+          <a href="#">Advertising</a>
+          <a href="#">Business</a>
+          <a href="#">About</a>
+        </nav>
+        <nav class="footer-right">
+          <a href="#">New Privacy &amp; Terms</a>
+          <a href="#">Settings</a>
+        </nav>
+      </footer>
+    </div>
+  </body>>
+</html>>
